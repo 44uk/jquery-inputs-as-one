@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style type="text/css">
+        input {
+            width: 4em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div id="input_set1">
+    <p>MaxLength: 2,3,4,5</p>
+    <input type="text" maxlength="2"/>
+    <input type="text" maxlength="3"/>
+    <input type="text" maxlength="4"/>
+    <input type="text" maxlength="5"/>
+</div>
+
+<div id="input_set2">
+    <p>MaxLength: 1</p>
+    <input type="text" maxlength="1"/>
+    <input type="text" maxlength="1"/>
+    <input type="text" maxlength="1"/>
+    <input type="text" maxlength="1"/>
+    <input type="text" maxlength="1"/>
+    <input type="text" maxlength="1"/>
+    <input type="text" maxlength="1"/>
+    <input type="text" maxlength="1"/>
+    <input type="text" maxlength="1"/>
+    <input type="text" maxlength="1"/>
+</div>
+
+<div id="credit_card_number_esque">
+    <p>MaxLength: 4,4,4,4</p>
+    <input type="text" maxlength="4"/>
+    <span class="divider">-</span>
+    <input type="text" maxlength="4"/>
+    <span class="divider">-</span>
+    <input type="text" maxlength="4"/>
+    <span class="divider">-</span>
+    <input type="text" maxlength="4"/>
+</div>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="jquery.inputs-as-one.js"></script>
+<script type="text/javascript">
+    $('#input_set1').inputsAsOne();
+    $('#input_set2').inputsAsOne();
+    $('#credit_card_number_esque').inputsAsOne();
+</script>
+</body>
+</html>
