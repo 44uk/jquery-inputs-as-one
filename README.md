@@ -6,11 +6,19 @@ Multiple input[type="text"] as one.
 Usage
 -----------------------------
 
-    jQuery('#element_has_inputs_as_children').inputsAsOne();
+    <div id="input_elements_wrapper">
+        <input type="text" />
+        <input type="text" />
+        <input type="text" />
+    </div>
+
+    <script type="text/javascript">
+    jQuery('#input_elements_wrapper').inputsAsOne();
+    </script>
 
 Options
 -----------------------------
 
     {
-        wayback: true
+        wayback: true // jump prev input when backspace pressed in empty input.
     }
