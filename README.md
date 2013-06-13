@@ -7,9 +7,9 @@ Usage
 -----------------------------
 
     <div id="input_elements_wrapper">
-        <input type="text" />
-        <input type="text" />
-        <input type="text" />
+        <input type="text" maxlength="4" />
+        <input type="text" maxlength="4" />
+        <input type="text" maxlength="4" />
     </div>
 
     <script type="text/javascript">
